@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.bg-purple {
+  background: rgb(4, 0, 28);
+  border-bottom: 0.5px solid #5f5e5e;
+}
+
+.fc-purple {
+  color: rgb(30, 2, 186);
+  font-family: "Yuji Syuku", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.fc-lightBlue {
+  color: rgb(0, 204, 255);
+}
+
+.fc-gray {
+  color: rgba(128, 128, 128, 0.748);
+  text-transform: uppercase;
+}
+
+.bg-btn {
+  background: rgb(30, 2, 186);
+  transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.bg-btn:hover {
+  background: rgb(0, 55, 255);
+}
+
+.f-chakra-petch {
+  font-family: "Chakra Petch", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.fs-64 {
+  font-size: 64px;
+}
+
+.all {
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-image {
+  width: 25%;
+}
+
+.main-content {
+  width: 50%;
+}
+
+@media (max-width: 920px) {
+  .all {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .all :where(.main-image, .main-content) {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-image img {
+    width: 300px;
+    height: 250px;
+  }
+
+  .main-image {
+    width: fit-content;
+  }
+
+  .main-content {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 420px) {
+  .main-image img {
+    width: 250px;
+    height: 200px;
+  }
+
+  .fs-64 {
+    font-size: 32px;
+  }
+}
+
+.features h2 {
+  font-size: 50px;
+}
+
+.features {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #9aa6d9;
+}
+
+.products {
+  min-height: 50vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  min-height: 40vh;
+  background-color: rgb(4, 0, 28);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  background-color: white;
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+}
+
+.ftr {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
